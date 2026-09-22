@@ -1,7 +1,6 @@
 # 🪄 My Prompt Library: Vibe-Coding Spells
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/Sunrase26/my-prompts?style=flat-square&color=8A2BE2)
-![Challenge](https://img.shields.io/badge/Challenge-70_Days_of_Vibe_Coding-success?style=flat-square)
 
 Личная база знаний и коллекция отборных промптов для ChatGPT, Claude и Copilot. 
 Этот репозиторий — мой арсенал для делегирования рутины нейросетям в учебе, разработке и повседневных задачах.
