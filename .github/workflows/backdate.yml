@@ -1,0 +1,20 @@
+name: Backdate Nov 18-20
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  commit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create commits for Nov 18-20, 2026
+        run: |
+          git config user.name "${{ github.actor }}"
+          git config user.email "aigiziksanov@gmail.com"
+          for d in 18 19 20; do
+            GIT_AUTHOR_DATE="2026-11-$d 15:00:00" GIT_COMMITTER_DATE="2026-11-$d 15:00:00" git commit --allow-empty -m "Update 2026-11-$d"
+          done
+          git push
